@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+	<parameter name ="url" value="https://login.salesforce.com"></parameter>
+	<parameter name="username" value="dilip@testleaf.com"></parameter>
+	<parameter name="password" value="Test@2025"></parameter>
+	
+	
+  <test thread-count="5" parallel="classes" name="Test" verbose="5">
+    <classes>
+      <class name="week4.day3.ChildDynamicParameterization"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
